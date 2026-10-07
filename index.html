@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopKart - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="topbar">
+        <a href="index.html" class="logo">Shop<span>Kart</span></a>
+
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button onclick="searchProduct()">🔍</button>
+        </div>
+
+        <div class="nav-links">
+            <a href="login.html">Login</a>
+            <a href="account.html">Account</a>
+            <a href="orders.html">Orders</a>
+            <a href="cart.html">🛒 Cart</a>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="categories.html">Categories</a>
+        <a href="wishlist.html">Wishlist</a>
+        <a href="orders.html">Orders</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Welcome to ShopKart</h1>
+        <p>Everything you need, all in one place.</p>
+        <a href="products.html" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Popular Categories</h2>
+
+    <div class="categories">
+        <a href="products.html" class="category">📱 Electronics</a>
+        <a href="products.html" class="category">👕 Fashion</a>
+        <a href="products.html" class="category">💻 Computers</a>
+        <a href="products.html" class="category">🏠 Home</a>
+        <a href="products.html" class="category">🎮 Gaming</a>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Today's Deals</h2>
+
+    <div class="products">
+
+        <div class="product-card">
+            <div class="product-img">📱</div>
+            <h3>Smartphone X</h3>
+            <p class="rating">★★★★★</p>
+            <p class="price">₹24,999</p>
+            <button onclick="addToCart('Smartphone X',24999)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img">💻</div>
+            <h3>Pro Laptop</h3>
+            <p class="rating">★★★★☆</p>
+            <p class="price">₹59,999</p>
+            <button onclick="addToCart('Pro Laptop',59999)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img">🎧</div>
+            <h3>Wireless Headphones</h3>
+            <p class="rating">★★★★★</p>
+            <p class="price">₹2,499</p>
+            <button onclick="addToCart('Wireless Headphones',2499)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-img">⌚</div>
+            <h3>Smart Watch</h3>
+            <p class="rating">★★★★☆</p>
+            <p class="price">₹3,999</p>
+            <button onclick="addToCart('Smart Watch',3999)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 ShopKart. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
